@@ -1,0 +1,766 @@
+<!doctype html>
+<html>
+<head>
+       
+<style>
+::selection{
+             color:white;
+			 background-color:cyan;
+           }
+body{
+     font-family:cambria;
+    }
+#A{
+    width:100%;
+	height:80px;
+	border:1px solid black;
+	color:white;
+	background:black;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+  }
+#image20{
+          cursor:pointer;
+         position:absolute;
+		 top:26%;
+		 left:5.5%;
+        }   
+#a1{
+      cursor:pointer;
+     font-size:35px;
+	 font-weight:bold;
+	 position:absolute;
+	 left:10%;
+	 top:15%;
+   }
+#a2{
+      cursor:pointer;
+     font-size:15px;
+	 font-weight:bold;
+	 position:absolute;
+	 left:10%;
+	 top:56%;
+   }
+#a3{
+    
+    position:absolute;
+	right:30%;
+	top:23%;
+   }   
+#ul{
+    
+	list-style:none;
+  }
+.li{
+   display:inline;
+   padding:10px;
+  } 
+.a4{
+     text-decoration:none;
+	 font-size:20px;
+	 font-weight:bold;
+	 color:white;
+   }
+.z{
+   color:green;
+  }
+#B{
+   width:100%;
+   height:300px;
+   background-image:url(stock1.jpg);
+   background-size:100%,300px;
+   background-repeat:no-repeat;
+   border-top:1px solid gray;
+   z-index:-1;
+   opacity:0.8;
+   position:absolute;
+   top:12.5%;
+   left:0;
+   right:0;
+  }
+#b1{
+    color:white;
+	font-size:48px;
+	font-weight:bold;
+	position:absolute;
+	top:28%;
+	left:40%;
+   } 
+#b2{
+    color:gray;
+	font-size:18px;
+	word-spacing:5px;
+	position:absolute;
+	top:50%;
+	left:32%;
+   }    
+#C{
+   width:100%;
+   height:1200px;
+   background-color:white;
+   z-index:-1;
+   position:absolute;
+   top:59.6%;
+   left:0;
+   right:0;
+  }
+#c1{
+     width:40%;
+	 height:30%;
+	 background-image:url('dual.jfif');
+	 background-size:cover;
+	 background-repeat:no-repeat;
+	 box-shadow:-40px -25px 10px 10px green;
+	 border-radius:70%;
+	 position:absolute;
+	 top:12%;
+	 left:4%;
+   }
+ #c2{
+     width:14%;
+	 height:14%;
+	 background-color:#146e2c;
+	 transform:rotate(50deg);
+	 z-index:1;
+	 position:absolute;
+	 top:8%;
+	 left:24%;
+    }
+#c3{
+    font-size:45px;
+	transform:rotate(-50deg);
+	font-weight:bold;
+	color:white;
+	position:absolute;
+	left:20%;
+	top:16%;
+   }
+#c4{
+    font-size:25px;
+	transform:rotate(-50deg);
+	color:#ced9d1;
+	position:absolute;
+	left:25%;
+	top:29%;
+   }
+#c5{
+    font-size:17px;
+	color:gray;
+	font-weight:bold;
+	position:absolute;
+	right:35.8%;
+	top:10%;
+   }  
+#c6{
+    font-size:40px;
+	color:#080430;
+	font-weight:bold;
+	position:absolute;
+	left:51%;
+	top:13%;
+   } 
+#c7{
+    font-size:22px;
+	color:black;
+	position:absolute;
+	left:51.5%;
+	top:24%;
+   } 
+   
+#c8{
+	font-size:17px;
+	width:47%;
+	color:gray;
+	line-height:30px;
+	position:absolute;
+	left:51.6%;
+	top:32%;
+   }
+#c9{
+    width:28%;
+	height:20%;
+	border-radius:5px;
+	background-color:#efedf0;
+	position:absolute;
+	top:76%;
+	left:7%;
+   }  
+#c10{
+    width:28%;
+	height:20%;
+	border-radius:5px;
+	background-color:#efedf0;
+	position:absolute;
+	top:76%;
+	left:36%;
+   } 
+#c11{
+    width:28%;
+	height:20%;
+	border-radius:5px;
+	background-color:#efedf0;
+	position:absolute;
+	top:76%;
+	right:7%;
+   }
+#t1{
+     font-size:25px;
+	 color:#080430;
+	 position:absolute;
+	 top:15%;
+	 left:24%; 
+   } 
+#t2{
+     font-size:17px;
+	 width:55%;
+	 line-height:25px;
+	 position:absolute;
+	 top:37%;
+	 left:24%; 
+   }
+#image1{
+           filter:contrast(120%);
+           position:absolute;
+		   top:10%;
+		   left:7%;
+       } 
+#D{
+   width:100%;
+   height:600px;
+   background-color:white;
+   z-index:-1;
+   position:absolute;
+   top:247%;
+   left:0;
+   right:0;
+  }	
+#image2{
+         max-width:100%;
+		 max-height:auto;
+		 border-radius:7px;
+		 position:absolute;
+		 top:14%;
+		 right:29%;
+       }
+#image3{
+         max-width:100%;
+		 max-height:auto;
+		 border-radius:7px;
+		 position:absolute;
+		 top:14%;
+		 right:5.5%;
+       } 
+#d1{
+    font-weight:bold;
+	color:gray;
+    position:absolute;
+	top:15%;
+	left:3%;
+   }
+#d2{
+    font-weight:bold;
+	width:44%;
+	color:#080430;
+	font-size:37px;
+    position:absolute;
+	top:22%;
+	left:3%;
+   }
+#d3{
+    color:green;
+	width:44%;
+	font-size:37px;
+    position:absolute;
+	top:45%;
+	left:3%;
+   }
+#d4{
+    font-weight:bold;
+	font-size:24px;
+    position:absolute;
+	top:56%;
+	left:3%;
+   } 
+#d5{
+    color:gray;
+	width:21%;
+	line-height:28px;
+	font-size:18px;
+    position:absolute;
+	top:63%;
+	left:3%;
+   }
+#d6{
+    color:green;
+	width:44%;
+	font-size:37px;
+    position:absolute;
+	top:45%;
+	left:28%;
+   }
+#d7{
+    font-weight:bold;
+	font-size:24px;
+	color:#080430;
+    position:absolute;
+	top:56%;
+	left:28%;
+   } 
+#d8{
+    color:gray;
+	width:21%;
+	line-height:28px;
+	font-size:18px;
+    position:absolute;
+	top:63%;
+	left:28%;
+   }
+#E{
+   width:100%;
+   height:600px;
+   background-color:#d6d4ce;
+   z-index:-1;
+   position:absolute;
+   top:340%;
+   left:0;
+   right:0;
+  }	
+#e1{
+    font-weight:bold;
+	color:gray;
+    position:absolute;
+	top:10%;
+	left:38%;
+   }  
+#e2{
+    font-weight:bold;
+	width:50%;
+	font-size:37px;
+	color:#080430;
+    position:absolute;
+	top:15%;
+	left:28%;
+   } 
+#e3{
+	color:#080430;
+	font-size:22px;
+    position:absolute;
+	top:42%;
+	left:15%;
+   }
+#e4{
+	color:gray;
+	width:32%;
+	font-size:17px;
+    position:absolute;
+	top:49%;
+	left:15%;
+   }
+#image4{
+        border:1px solid green;
+		border-radius:5px;
+        position:absolute;
+		top:44%;
+		left:7%;
+       }   
+#e5{
+	color:#080430;
+	font-size:22px;
+    position:absolute;
+	top:42%;
+	right:20%;
+   }
+#e6{
+	color:gray;
+	width:32%;
+	font-size:17px;
+    position:absolute;
+	top:50%;
+	right:7.5%;
+   } 
+#image5{
+        border:1px solid black;
+		border-radius:5px;
+        position:absolute;
+		top:44%;
+		right:42%;
+       }
+#e7{
+	color:#080430;
+	font-size:22px;
+    position:absolute;
+	top:67%;
+	left:15%;
+   }
+#e8{
+	color:gray;
+	width:32%;
+	font-size:17px;
+    position:absolute;
+	top:75%;
+	left:15%;
+   }
+#image6{
+        border:1px solid red;
+		border-radius:5px;
+        position:absolute;
+		top:68%;
+		left:7%;
+       }
+   
+#e9{
+	color:#080430;
+	font-size:25px;
+    position:absolute;
+	top:67%;
+	right:28%;
+   }
+#e10{
+	color:gray;
+	width:37%;
+	font-size:20px;
+    position:absolute;
+	top:75%;
+	right:2%;
+   } 
+#image7{
+        border:1px solid orange;
+		border-radius:5px;
+        position:absolute;
+		top:68%;
+		right:42%;
+       }
+#F{
+   width:100%;
+   height:230px;
+   background-color:white;
+   z-index:-1;
+   position:absolute;
+   top:434.1%;
+   left:0;
+   right:0;
+  }	
+#f1{
+     width:55%;
+     font-size:25px;
+	 font-color:#080430;
+     position:absolute;
+	 top:35%;
+	 left:9%;
+   }
+#f2{
+    text-decoration:none;
+	background-color:#0dba49;
+	padding:13px 60px;
+	color:white;
+	border-radius:7px;
+    position:absolute;
+	right:7%;
+	top:40%;
+   } 
+#f2:hover{
+         background-color:#0eeb5b;
+		 }   
+span{
+     font-size:20px;
+    }   
+
+#End{
+   width:100%;
+   height:500px;
+   background:linear-gradient(to bottom,#08021a,#0a021c);
+   z-index:-1;
+   position:absolute;
+   top:470%;
+   left:0;
+   right:0;
+  }	
+ #j4{
+     font-size:35px;
+	 font-weight:bold;
+	 text-decoration:none;
+	 color:white;
+	 position:absolute;
+	 left:7%;
+	 top:10%;
+   }
+#j5{
+     font-size:15px;
+	 font-weight:bold;
+	 color:white;
+	 text-decoration:none;
+	 position:absolute;
+	 left:7%;
+	 top:17%;
+   }
+#image21{
+          cursor:pointer;
+          position:absolute;
+		  top:12%;
+		  left:3%;
+        }   
+#j6{
+     font-size:18px;
+	 width:28%;
+	 color:gray;
+	 line-height:30px;
+	 position:absolute;
+	 left:7%;
+	 top:28%;
+   }
+#j7{
+     font-size:30px;
+	 color:white;
+	 position:absolute;
+	 left:40%;
+	 top:11%;
+   } 
+#j8{
+     font-size:18px;
+	 width:24%;
+	 color:gray;
+	 line-height:30px;
+	 position:absolute;
+	 left:40%;
+	 top:28%;
+   } 
+#j9{
+     font-size:18px;
+	 width:24%;
+	 color:gray;
+	 line-height:30px;
+	 position:absolute;
+	 left:40%;
+	 top:52%;
+   }
+#j10{
+     font-size:18px;
+	 color:gray;
+	 position:absolute;
+	 left:40%;
+	 top:65%;
+   } 
+#email{
+       text-decoration:none;
+	   color:gray;
+      }
+#email:hover{
+            color:white;
+			}
+#k1{
+     font-size:30px;
+	 color:white;
+	 position:absolute;
+	 left:68%;
+	 top:11%;
+   }
+#ul1{
+     list-style:none;
+	 font-size:20px;
+	 color:gray;
+	 line-height:54px;
+	 position:absolute;
+	 top:20%;
+	 left:65%;
+    } 
+#ul2{
+     list-style:none;
+	 font-size:20px;
+	 color:gray;
+	 line-height:54px;
+	 position:absolute;
+	 top:20%;
+	 left:82%;
+    }
+.r1{
+    text-decoration:none;
+	color:gray;
+   }
+.r1:hover{
+          color:white;
+         } 
+#k2{
+     font-size:30px;
+	 color:white;
+	 position:absolute;
+	 left:84%;
+	 top:11%;
+   }
+#hr2{
+     width:100%;
+	 opacity:0.1;
+     position:absolute;
+     top:84%;
+    }
+#k3{
+     font-size:18px;
+	 color:gray;
+	 position:absolute;
+	 left:34%;
+	 bottom:8%;
+   } 	
+</style>
+</head>
+<body>
+     <div id="A">
+      <div id="a1">Pro-Traderz</div>
+	  <div id="a2">compounding Growth</div>
+	  <div><img id="image20" src="head.jpeg" width="40px" height="40px"></div>
+	  
+	  <div id="a3">
+		<ul id="ul">
+		    <li class="li"><a class="a4" href="ProWeb.html">HOME</a></li>
+			<li class="li"><a class="a4 z" href="#C">ABOUT</a></li>
+			<li class="li"><a class="a4" href="Courses.html">COURSES</a></li>
+			<li class="li"><a class="a4" href="Contact.html">CONTACT</a></li>
+		</ul>
+	  </div>
+   </div>
+   
+   <div id="B">
+      <div id="b1">About Us</div>
+	  <div id="b2">Experience you can trust, service you can count on.</div>
+	  
+   </div>
+   
+   <div id="C">
+   
+     <div id="c1"></div>
+	 
+	   <div id="c2">
+	        <div id="c3">5+</div>
+	         <div id="c4">&nbsp; Years of Experience</div>
+	   </div>
+	   
+	   <div id="c5">ABOUT OUR COMPANY</div>
+	   <div id="c6">We are the next generation of the Trading & Investment World</div>
+	   <div id="c7">Deep Dive into Risk Management. What are IPOs all about ? Professional Tips and Tricks</div>
+	   
+	   
+	   <div id="c8">
+	       Still In today's culture, trading is seen as a risky industry that is not appropriate for everyone, yet this is a myth that we debunk by teaching you about profitable trading techniques.Academy of Pro-Traderz is a Premium stock market training Institute which facilitates flagship level stock market training and Investment programs for beginners. Our training program is designed dedicated for college students , Employees, House wives, Businessmen. We expertise in Option selling , Swing trading and Long Term Investing As of now, we've got a number of significant clients from various backgrounds. College students, software developers, doctors, lawyers, top MNC executives, college lecturers and heads of departments, businessmen, CAs, and even housewives are among the clientele. Academy of Pro-Traderz has a mission to empower society and different types of people within that society to have the information and abilities necessary to take advantage of the vast array of possibilities available in the market to achieve financial independence and develop a smart trader community.
+		 </div>  
+		 
+		 <div id="c9">
+		    <div id="t1">Personalized Attention</div>
+			<div id="t2">
+			   We pay personal attention to every student by providing daily voice and chat support.
+			</div>
+			<div><img id="image1"src="cxt.jfif" width="55px" height="50px"></div>
+		 
+		 </div>
+		 
+		 <div id="c10">
+		   <div id="t1">Highly trained trainers</div>
+			<div id="t2">
+			 Our Traders are professional with more than 5 years of experience in stock & Financial markets.
+			</div>
+			<div><img id="image1"src="like.png" width="55px" height="50px"></div>
+		 
+		 </div>
+		 
+		 <div id="c11">
+		  <div id="t1">Lifetime Validity</div>
+			<div id="t2">
+              You will get lifetime access of our training program & premium What's App group.
+			</div>
+			<div><img id="image1"src="victory.png" width="55px" height="50px"></div>
+		 
+		 </div>
+        </div>
+   
+      <div id="D">
+	      <div><img id="image2" src="a7.jpg" width="280px" height="400px" ></div>
+		  <div><img id="image3" src="a8.jpg" width="280px" height="400px"></div> 
+	       
+		  <div id="d1">WE HAVE STUDENTS AND CLIENTS FROM ALL OVER THE WORLD</div>
+          <div id="d2">Join our Army and You can also be a Pro-Trader one day !</div>
+		  <div id="d3">500+</div>
+		  <div id="d4">Happy Clients</div>
+		  <div id="d5">We help our clients increase profits with our PMS Services.More than 500 clients are enjoying unlimited benefits of our PMS Services.</div>
+		  
+		  <div id="d6">300+</div>
+		  <div id="d7">Students Mentored</div>
+		  <div id="d8">We help our students increase profits by teaching them our Progressive Passive Income sources and premium strategies .</div>
+     </div>
+	 
+	 <div id="E">
+	   <div id="e1">WHY TO CHOOSE ACADEMY OF PRO-TRADERZ</div>
+	   <div id="e2">People choose us because we serve the  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; best for everyone</div>
+	   
+	   <div id="e3">Hand holding Support</div>
+	   <div id="e4">We will provide hand holding Support until you become a Pro.</div>
+	   <div><img id="image4" src="bag.jpeg" width="70px" height="70px"></div>
+	   
+	   <div id="e5">Get Authorised Certification</div>
+	   <div id="e6">You will be rewarded with our Premium authorised Certificate after completion of training program.</div>
+	   <div><img id="image5" src="setting1.png" width="70px" height="70px"></div>
+	   
+	   <div id="e7">Generate 20-30% monthly returns</div>
+	   <div id="e8">After this intense training program You will be able to generate consistent 20-30% monthly returns.</div>
+	   <div><img id="image6" src="zoom.png" width="70px" height="70px"></div>
+	   
+	   <div id="e9">Trade with Us</div>
+	   <div id="e10">We will serve you with our high Probability Premium trade calls during live markets.</div>
+       <div><img id="image7" src="trade.jpeg" width="70px" height="70px"></div>
+
+	 </div>
+	 
+	 <div id="F">
+	    <div id="f1">Finally, Let's talk about the highly anticipated Professional Stock market training Program by Academy of Pro-Traderz</div>
+		<div><a id="f2" href="#"><b>View Training Program &nbsp;<span>&#8594;</span></b> </a></div>
+	 
+	 
+	 </div>
+	 
+	 
+	 <div id="End">
+	           
+			   
+			   <div><a id="j4"  href="#">Academy Of Pro-Traderz</a></div>
+			   <div><a id="j5"  href="#">Compounding Growth</a></div>
+			   <div><img id="image21" src="head.jpeg" width="40px" height="40px"></div>
+	           <div id="j6">Academy of Pro-Traderz has a mission to empower society to have the information and abilities necessary to take advantage of the vast array of possibilities available in the market to achieve financial independence and develop a smart trader community.</div>
+               
+			   <div id="j7">CONTACT INFO</div>
+			   <div id="j8">Address : Academy of Pro-Traderz, Plot No, A-17, Near KDK College, Nandanvan Nagpur - 440009.</div>
+			   <div id="j9">Contact us @ 8983112403</div>
+			   <div id="j10">Email: <a id="email" href="#"> protraderzofficial@gmail.com</a></div>
+			   
+			   <div id="k1">SERVICES</div>
+			   
+			   <ul id="ul1">
+			     <li class="li1">Portfolio Management</li>
+				 <li class="li1">Professional Trading</li>
+				 <li class="li1">Capital Management</li>
+				 <li class="li1">Risk Management</li>
+				 <li class="li1"> Mutual Funds & ETF</li>
+			   </ul>
+			   
+			   
+			   <div id="k2">COMPANY</div>
+			   <ul id="ul2">
+			     <li class="li2"><a class="r1" href="#">About company</a></li>
+			     <li class="li2"><a class="r1" href="#C">Latest Blog posts</a></li>
+			     <li class="li2"><a class="r1" href="#">Our Gallery</a></li>
+			     <li class="li2"><a class="r1" href="#">Courses</a></li>
+				 <li class="li2"><a class="r1" href="#">Get in touch</a></li>
+			   </ul>
+			   <hr id="hr2">
+			   
+			   
+			   <div id="k3">© 2021 Academy of Pro-Traderz. All rights reserved</div>
+
+	   </div>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,883 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+
+body{
+     font-family:cambria;
+    }
+#A{
+    width:100%;
+	height:80px;
+	border:1px solid black;
+	color:white;
+	background:black;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+  }
+#image20{
+         cursor:pointer;
+         position:absolute;
+		 top:26%;
+		 left:5.5%;
+        }   
+#a1{
+     cursor:pointer;
+     font-size:35px;
+	 font-weight:bold;
+	 position:absolute;
+	 left:10%;
+	 top:15%;
+   }
+#a2{
+     cursor:pointer;
+     font-size:15px;
+	 font-weight:bold;
+	 position:absolute;
+	 left:10%;
+	 top:56%;
+   }
+#a3{
+    
+    position:absolute;
+	right:30%;
+	top:23%;
+   }   
+#ul{
+    
+	list-style:none;
+  }
+.li{
+   display:inline;
+   padding:10px;
+  } 
+.a4{
+     text-decoration:none;
+	 font-size:20px;
+	 font-weight:bold;
+	 color:white;
+   }
+.z{
+   color:green;
+  }
+#B{
+    width:100%;
+	height:250px;
+	color:white;
+	z-index:-1;
+    background-image:url(stock1.jpg);
+	background-repeat:no-repeat;
+    background-size:cover;
+	position:absolute;
+	top:12%;
+	left:0;
+	right:0;
+  }
+#b1{
+    font-size:50px;
+	font-weight:bold;
+    position:absolute;
+	top:32%;
+	left:29%;
+   }
+#b2{
+   font-size:22px;
+	font-weight:bold;
+    position:absolute;
+	top:60%;
+	left:22%;
+   }   
+#C{
+    width:100%;
+	height:1200px;
+    z-index:-1;
+	color:white;
+	background:#f2f0f2;
+	position:absolute;
+	top:50%;
+	left:0;
+	right:0;
+  }
+#c1{
+    color:gray;
+    position:absolute;
+	top:8%;
+	left:38%;
+  }
+#c2{
+    width:60%;
+    font-size:40px;
+	font-weight:bold;
+	color:#080430;
+    position:absolute;
+	top:10%;
+	left:20%;
+  }  
+#c3{
+    width:44%;
+	height:400px;
+	background-color:white;
+	position:absolute;
+	top:25%;
+	left:5%;
+   }
+#image1{
+       border-radius:50%;
+       position:absolute;
+	   top:16%;
+	   left:44%;
+       } 
+#x1{
+       color:#080430;
+	   font-size:28px;
+	   font-weight:bold;
+       position:absolute;
+	   top:38%;
+	   left:12%;
+  }	
+#x2{
+       color:gray;
+	   width:82%;
+	   line-height:25px;
+       position:absolute;
+	   top:60%;
+	   left:12%;
+  }	     
+#c4{
+    width:44%;
+	height:400px;
+	background-color:white;
+	position:absolute;
+	top:25%;
+	right:5%;
+   } 
+#c5{
+    width:44%;
+	height:400px;
+	background-color:white;
+	position:absolute;
+	top:60%;
+	left:5%;
+   } 
+#c6{
+    width:44%;
+	height:400px;
+	background-color:white;
+	position:absolute;
+	top:60%;
+	right:5%;
+   }
+#y1{
+       color:#080430;
+	   font-size:28px;
+	   font-weight:bold;
+       position:absolute;
+	   top:38%;
+	   left:20%;
+  }	
+#y2{
+       color:gray;
+	   width:82%;
+	   font-size:16px;
+	   line-height:25px;
+       position:absolute;
+	   top:55%;
+	   left:12%;
+  }
+#D{
+    width:100%;
+	height:800px;
+	z-index:-1;
+	color:white;
+	background:white;
+	position:absolute;
+	top:237.8%;
+	left:0;
+	right:0;
+  } 
+#xy1{
+     color:gray;
+	 font-weight:bold;
+	 position:absolute;
+	 top:10%;
+	 left:35%;
+    }
+#xy2{
+     color:#080430;
+	 font-size:35px;
+	 font-weight:bold;
+	 position:absolute;
+	 top:14%;
+	 left:38%;
+    } 	
+#d1{
+     width:28%;
+	 height:30%;
+	 border-radius:5px;
+	 background-color:#f2f0f2;
+	 position:absolute;
+	 top:28%;
+	 left:6%;
+   }
+#d2{
+     width:28%;
+	 height:30%;
+	 border-radius:5px;
+	 background-color:#f2f0f2;
+	 position:absolute;
+	 top:28%;
+	 left:36%;
+   } 
+#d3{
+     width:28%;
+	 height:30%;
+	 border-radius:5px;
+	 background-color:#f2f0f2;
+	 position:absolute;
+	 top:28%;
+	 right:6%;
+   }
+#d4{
+     width:28%;
+	 height:30%;
+	 border-radius:5px;
+	 background-color:#f2f0f2;
+	 position:absolute;
+	 top:61%;
+	 left:6%;
+   }
+#d5{
+     width:28%;
+	 height:30%;
+	 border-radius:5px;
+	 background-color:#f2f0f2;
+	 position:absolute;
+	 top:61%;
+	 left:36%;
+   }
+#d6{
+     width:28%;
+	 height:30%;
+	 border-radius:5px;
+	 background-color: #f2f0f2;
+	 position:absolute;
+	 top:61%;
+	 right:6%;
+   } 
+#p1{
+    color:#080430;
+	font-size:25px;
+	position:absolute;
+	top:20%;
+	left:22%;
+   }
+#p2{
+    color:gray;
+	width:65%;
+	line-height:25px;
+	font-size:17px;
+	position:absolute;
+	top:42%;
+	left:22%;
+   }   
+#E{
+    width:100%;
+	height:800px;
+	z-index:-1;
+	color:white;
+	background-image:url(stock1.jpg);
+	background-repeat:no-repeat;
+    background-size:cover;
+	position:absolute;
+	top:363%;
+	left:0;
+	right:0;
+  }
+#e1{
+    color:white;
+	font-weight:bold;
+	position:absolute;
+	top:12%;
+	left:8%;
+   }
+#e2{
+    color:white;
+	width:40%;
+	font-size:35px;
+	font-weight:bold;
+	position:absolute;
+	top:16%;
+	left:8%;
+   }
+#e3{
+    color:white;
+	font-size:20px;
+	font-weight:bold;
+	position:absolute;
+	top:34%;
+	left:8%;
+   }
+#e4{
+    color:gray;
+	line-height:25px;
+	font-weight:bold;
+	width:38%;
+	font-size:16px;
+	position:absolute;
+	top:38%;
+	left:8%;
+   } 
+#e5{
+    width:40%;
+	opacity:0.6;
+    position:absolute;
+	top:48%;
+	left:8%;
+   }
+#e6{
+    color:white;
+	font-size:20px;
+	font-weight:bold;
+	position:absolute;
+	top:55%;
+	left:8%;
+   } 
+#e7{
+    color:gray;
+	line-height:25px;
+	font-weight:bold;
+	width:38%;
+	font-size:16px;
+	position:absolute;
+	top:60%;
+	left:8%;
+   } 
+#e8{
+    width:40%;
+	opacity:0.6;
+    position:absolute;
+	top:70%;
+	left:8%;
+   }
+#e9{
+    color:white;
+	font-size:20px;
+	font-weight:bold;
+	position:absolute;
+	top:75%;
+	left:8%;
+   } 
+#e10{
+    color:gray;
+	line-height:25px;
+	font-weight:bold;
+	width:38%;
+	font-size:16px;
+	position:absolute;
+	top:80%;
+	left:8%;
+   } 
+#F{
+    width:100%;
+	height:1000px;
+	z-index:-1;
+	color:white;
+	background:#f2f0f2;
+	position:absolute;
+	top:488%;
+	left:0;
+	right:0;
+  }
+
+#xyz1{
+      color:gray;
+	  font-weight:bold;
+      position:absolute;
+	  top:10%;
+	  left:23%;
+     }
+#xyz2{
+      color:#080430;
+	  width:50%;
+	  font-size:34px;
+	  font-weight:bold;
+      position:absolute;
+	  top:13%;
+	  left:27%;
+     }  	 
+#f1{
+     width:27%;
+	 height:28%;
+	 border-radius:8px;
+	 background-color:white;
+	 transition:1s;
+	 position:absolute;
+	 top:27%;
+	 left:8%;
+   }
+#f1:hover{
+          box-shadow:0px 3px 10px 0px gray;
+		  transform:translateY(-10px);
+         } 
+#image2{
+       border-radius:50%;
+       position:absolute;
+	   left:40%;
+	   top:15%;
+       }
+	   
+#h1{
+    color:#080430;
+	font-size:23px;
+    position:absolute;
+	left:15%;
+	top:41%;
+   }
+#h2{
+    color:gray;
+	width:80%;
+	font-size:17px;
+	line-height:25px;
+    position:absolute;
+	left:11%;
+	top:58%;
+   }   
+#f2{
+     width:27%;
+	 height:28%;
+	 border-radius:8px;
+	 background-color:white;
+	 transition:1s;
+	 position:absolute;
+	 top:27%;
+	 left:37%;
+   } 
+#f2:hover{
+          box-shadow:0px 3px 10px 0px gray;
+		  transform:translateY(-10px);
+         }
+#h3{
+    color:#080430;
+	font-size:23px;
+    position:absolute;
+	left:22%;
+	top:41%;
+   }
+#h4{
+    color:gray;
+	width:80%;
+	font-size:17px;
+	line-height:25px;
+    position:absolute;
+	left:15%;
+	top:58%;
+   }   
+#f3{
+     width:27%;
+	 height:28%;
+	 border-radius:8px;
+	 background-color:white;
+	 transition:1s;
+	 position:absolute;
+	 top:27%;
+	 right:7%;
+   }
+#f3:hover{
+          box-shadow:0px 3px 10px 0px gray;
+		  transform:translateY(-10px);
+         } 
+#h5{
+    color:#080430;
+	font-size:23px;
+    position:absolute;
+	left:22%;
+	top:41%;
+   }
+#h6{
+    color:gray;
+	width:80%;
+	font-size:17px;
+	line-height:25px;
+    position:absolute;
+	left:11.5%;
+	top:58%;
+   }		 
+#f4{
+     width:27%;
+	 height:28%;
+	 border-radius:8px;
+	 background-color:white;
+	 transition:1s;
+	 position:absolute;
+	 top:60%;
+	 left:8%;
+   }
+#f4:hover{
+          box-shadow:0px 3px 10px 0px gray;
+		  transform:translateY(-10px);
+         }    
+#f5{
+     width:27%;
+	 height:28%;
+	 border-radius:8px;
+	 background-color:white;
+	 transition:1s;
+	 position:absolute;
+	 top:60%;
+	 left:37%;
+   } 
+#f5:hover{
+          box-shadow:0px 3px 10px 0px gray;
+		  transform:translateY(-10px);
+         }    
+#f6{
+     width:27%;
+	 height:28%;
+	 border-radius:8px;
+	 background-color:white;
+	 transition:1s;
+	 position:absolute;
+	 top:60%;
+	 right:7%;
+   }
+#f6:hover{
+          box-shadow:0px 3px 10px 0px gray;
+		  transform:translateY(-10px);
+         } 
+#h7{
+    color:#080430;
+	font-size:23px;
+    position:absolute;
+	left:10%;
+	top:41%;
+   }
+#End{
+   width:100%;
+   height:500px;
+   background:linear-gradient(to bottom,#08021a,#0a021c);
+   z-index:-1;
+   position:absolute;
+   top:644.6%;
+   left:0;
+   right:0;
+  }	
+
+#j4{
+     font-size:35px;
+	 font-weight:bold;
+	 text-decoration:none;
+	 color:white;
+	 position:absolute;
+	 left:7%;
+	 top:10%;
+   }
+#j5{
+     font-size:15px;
+	 font-weight:bold;
+	 color:white;
+	 text-decoration:none;
+	 position:absolute;
+	 left:7%;
+	 top:17%;
+   }
+#image21{
+          cursor:pointer;
+          position:absolute;
+		  top:12%;
+		  left:3%;
+        }   
+#j6{
+     font-size:18px;
+	 width:28%;
+	 color:gray;
+	 line-height:30px;
+	 position:absolute;
+	 left:7%;
+	 top:28%;
+   }
+#j7{
+     font-size:30px;
+	 color:white;
+	 position:absolute;
+	 left:40%;
+	 top:11%;
+   } 
+#j8{
+     font-size:18px;
+	 width:24%;
+	 color:gray;
+	 line-height:30px;
+	 position:absolute;
+	 left:40%;
+	 top:28%;
+   } 
+#j9{
+     font-size:18px;
+	 width:24%;
+	 color:gray;
+	 line-height:30px;
+	 position:absolute;
+	 left:40%;
+	 top:52%;
+   }
+#j10{
+     font-size:18px;
+	 color:gray;
+	 position:absolute;
+	 left:40%;
+	 top:65%;
+   } 
+#email{
+       text-decoration:none;
+	   color:gray;
+      }
+#email:hover{
+            color:white;
+			}
+#k1{
+     font-size:30px;
+	 color:white;
+	 position:absolute;
+	 left:68%;
+	 top:11%;
+   }
+#ul1{
+     list-style:none;
+	 font-size:20px;
+	 color:gray;
+	 line-height:54px;
+	 position:absolute;
+	 top:20%;
+	 left:65%;
+    } 
+#ul2{
+     list-style:none;
+	 font-size:20px;
+	 color:gray;
+	 line-height:54px;
+	 position:absolute;
+	 top:20%;
+	 left:82%;
+    }
+.r1{
+    text-decoration:none;
+	color:gray;
+   }
+.r1:hover{
+          color:white;
+         } 
+#k2{
+     font-size:30px;
+	 color:white;
+	 position:absolute;
+	 left:84%;
+	 top:11%;
+   }
+#hr2{
+     width:100%;
+	 opacity:0.1;
+     position:absolute;
+     top:84%;
+    }
+#k3{
+     font-size:18px;
+	 color:gray;
+	 position:absolute;
+	 left:34%;
+	 bottom:8%;
+   }   
+</style>
+</head>
+<body>
+
+  <div id="A">
+      <div id="a1">Pro-Traderz</div>
+	  <div id="a2">compounding Growth</div>
+	  <div><img id="image20" src="head.jpeg" width="40px" height="40px"></div>
+	  
+	  <div id="a3">
+		<ul id="ul">
+		    <li class="li"><a class="a4" href="ProWeb.html">HOME</a></li>
+			<li class="li"><a class="a4 " href="About.html">ABOUT</a></li>
+			<li class="li"><a class="a4 z" href="#">COURSES</a></li>
+			<li class="li"><a class="a4" href="Contact.html">CONTACT</a></li>
+		</ul>
+	  </div>
+   </div>
+   
+   <div id="B">
+         <div id="b1"> " Legacy of a Pro-Trader "</div>
+		 <div id="b2">Our Flagship level all in one Stock market Trading & Investment Training Program</div>
+   </div>
+   
+   <div id="C">
+        <div id="c1">TRAINING PROGRAM CONTENTS</div>
+		<div id="c2">Get in depth details of our highly Premium &nbsp; &nbsp; &nbsp; and Anticipated Stock Market Training&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   program</div>
+		
+        <div id="c3">
+		   <div><img id="image1" src="t5.jpg" width="70px" height="70px"></div>
+		    <div id="x1">Price action strategies: A complete  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;guide for traders</div>
+            <div id="x2"> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;Price action trend trading,Trend following retracement  &nbsp; &nbsp;&nbsp;entry,Trend following breakout entry,The sequence of highs and lows,Inside bar,Wave length and steepness, The amateur squeeze &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and stop hunting,Subjectivity of Trendlines,supply and demand.</div>
+		</div>
+		
+		
+		<div><img id="c4" src="s1.jpg"></div>
+		<div> <img id="c5" src="s3.jpg"> </div>
+		
+	
+		<div id="c6">
+		  <div><img id="image1" src="t6.jpg" width="70px" height="70px"></div>
+		    <div id="y1">CandleStick & Chart Patterns</div>
+            <div id="y2"> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Thrusting candlestick pattern,Advance block candlestick pattern,Ladder bottom candlestick pattern, Breakaway candlestick pattern, Counterattack candlestick , Ascending triangle ,Descending triangle,Cup and Handle,Triple Top Reversal,Wedges,Pennants, Flag &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;and Pole and much more.</div>
+		
+		</div>
+   
+   </div>
+   
+   <div id="D">
+      
+	  <div id="xy1">BEAUTIFULLY CRAFTED TECHNICAL STRATEGIES</div>
+	  <div id="xy2">Trade Like a PRO</div>
+   
+      <div id="d1">
+	       <div id="p1">Core Fundamentals</div>
+		   <div id="p2">Intrinsic Value,Cash Flow,Assets & Liabilities,Balance Sheet,EPS,P/E Ratio,CASA and much more</div>
+	  </div>
+	  
+	  <div id="d2">
+	        <div id="p1">Technical Analysis</div>
+		    <div id="p2">Trend Lines,Support & Resistance,Fibonacci Retracement,50+ Indicators and much more</div>
+	  </div>
+	  
+	  <div id="d3">
+	       	 <div id="p1">Pro Stock Screeners</div>
+		     <div id="p2">Trading View,TickerTape,Money Control,Chart Ink Scanner ,  OPSTRA , Investing.com and &nbsp;much more</div>
+	  </div>
+	  
+	  <div id="d4">
+	         <div id="p1">Mutual Funds</div>
+		     <div id="p2">CAGR,SIP & SWP,Index Funds,ELSS Funds,LargeCap,MidCap & SmallCap Funds and much more</div>
+	  </div>
+	  
+	  <div id="d5">
+	            <div id="p1">Risk Management</div>
+		        <div id="p2">StopLoss,Capital Diversification,Capital Management,Risk per Trade,Risk To Reward and much more</div>
+	  </div>
+	  
+	  <div id="d6">
+	           <div id="p1">PRO Strategies</div>
+		       <div id="p2">Momentum,Breakout Trading,PullBack Trading,Bull Flag Trading,Scalping,Gap & Go Strategy and much more</div>
+	  </div>
+   
+   </div>
+   
+   <div id="E">
+      <div id="e1">INNOVATIVE TRADING SETUPS FOR</div>
+	  <div id="e2">We use Trading Strategies that are proven and practical</div>
+	  
+	  <div id="e3">Intraday Trading</div>
+	  <div id="e4">Volume Analysis, Live Price Action, Event & News based Trading, Trend and Directional Trading Strategies.</div>
+	  
+      <hr id="e5">
+      <div id="e6">Swing Trading</div>
+	  <div id="e7">Play the uptrend, Capture gains on Upside & downside,Entry Strategy,Exit Strategy,Position Sizing, Channel Trading</div>
+ 
+      <hr id="e8">
+	 <div id="e9">Positional Trading</div>
+     <div id="e10">Breakout trading strategy,Range trading strategy,Pullback and retracement trading strategy,Support and resistance trading strategy,Multi Timeframe Analysis</div>
+   </div>
+   
+   <div id="F">
+           
+		<div id="xyz1">100% SAFE LOW RISK FUTURE AND OPTION STRATEGIES SPECIALLY DESIGNED FOR BEGINNERS</div>
+        <div id="xyz2">Master F&O and Generate Unbelievable &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; returns</div>
+
+        <div id="f1">
+		   <div><img id="image2" src="t7.jpg" width="70px" height="70px"></div>
+		   <div id="h1">Low Risk Futures Trading</div>
+		   <div id="h2"> &nbsp;&nbsp; &nbsp;Bull calendar spread, Bear calendar&nbsp;&nbsp;&nbsp; &nbsp;spread. Bottom line, Buyer and Seller Interest,Trend-Following,Counter-Trend</div>
+
+ 
+		</div>
+		
+		<div id="f2">
+		           <div><img id="image2" src="t8.jpg" width="70px" height="70px"></div>
+		   		   <div id="h3">Options Strategies - I</div>
+		           <div id="h4">Covered Call, Married Put, Bull Call Spread, Bear Put Spread,Protective &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Collar,Long Straddle</div>
+
+		</div>
+		
+		
+		<div id="f3">
+		           <div><img id="image2" src="t9.jpg" width="70px" height="70px"></div>
+		   		   <div id="h5">Options Strategies - II</div>
+		           <div id="h6"> &nbsp; &nbsp; &nbsp; &nbsp;Long Strangle,Long Call Butterfly Spread,Iron Condor, Iron Butterfly, Delta &nbsp; &nbsp;Hedging, Short Straddle,Short Strangle</div>
+		
+		</div>
+		<div id="f4">
+		           <div><img id="image2" src="t10.jpg" width="70px" height="70px"></div>
+		   		   <div id="h5">Options Strategies - III</div>
+		           <div id="h6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Long Combination,Short &nbsp;Combination,Double Diagonal Front Spread W/Calls, Front Spread W/Puts.</div>
+		
+		</div>
+		<div id="f5">
+		           <div><img id="image2" src="t11.jpg" width="70px" height="70px"></div>
+		   		   <div id="h5">Mind-set & Psychology</div>
+		           <div id="h6">&nbsp; &nbsp; &nbsp;Trading Plans,Overcome Greed & Fear,Self analysis, emotional influences, &nbsp; &nbsp; &nbsp;Mental Attitude of a Winning Trader.</div>
+		
+		</div>
+		<div id="f6">
+		           <div><img id="image2" src="t12.jpg" width="70px" height="70px"></div>
+		   		   <div id="h7">Short & Long Term Investment</div>
+		           <div id="h6">Passive vs. Active Investing, How to find &nbsp; &nbsp;future Multibaggers ? Compounding Growth,Asset Allocation,Stock Selection</div>
+		</div>
+   </div>
+   
+   <div id="End">
+	           
+			   
+			   <div><a id="j4"  href="#">Academy Of Pro-Traderz</a></div>
+			   <div><a id="j5"  href="#">Compounding Growth</a></div>
+			   <div><img id="image21" src="head.jpeg" width="40px" height="40px"></div>
+	           <div id="j6">Academy of Pro-Traderz has a mission to empower society to have the information and abilities necessary to take advantage of the vast array of possibilities available in the market to achieve financial independence and develop a smart trader community.</div>
+               
+			   <div id="j7">CONTACT INFO</div>
+			   <div id="j8">Address : Academy of Pro-Traderz, Plot No, A-17, Near KDK College, Nandanvan Nagpur - 440009.</div>
+			   <div id="j9">Contact us @ 8983112403</div>
+			   <div id="j10">Email: <a id="email" href="#"> protraderzofficial@gmail.com</a></div>
+			   
+			   <div id="k1">SERVICES</div>
+			   
+			   <ul id="ul1">
+			     <li class="li1">Portfolio Management</li>
+				 <li class="li1">Professional Trading</li>
+				 <li class="li1">Capital Management</li>
+				 <li class="li1">Risk Management</li>
+				 <li class="li1"> Mutual Funds & ETF</li>
+			   </ul>
+			   
+			   
+			   <div id="k2">COMPANY</div>
+			   <ul id="ul2">
+			     <li class="li2"><a class="r1" href="#">About company</a></li>
+			     <li class="li2"><a class="r1" href="#C">Latest Blog posts</a></li>
+			     <li class="li2"><a class="r1" href="#">Our Gallery</a></li>
+			     <li class="li2"><a class="r1" href="#">Courses</a></li>
+				 <li class="li2"><a class="r1" href="#">Get in touch</a></li>
+			   </ul>
+			   <hr id="hr2">
+			   
+			   
+			   <div id="k3">© 2021 Academy of Pro-Traderz. All rights reserved</div>
+
+	   </div>
+
+
+
+
+
+
+</body>
+</html>

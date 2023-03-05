@@ -1,0 +1,532 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+body{
+     font-family:cambria;
+    }
+#A{
+    width:100%;
+	height:80px;
+	border:1px solid black;
+	color:white;
+	background:black;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+  }
+#image20{
+         cursor:pointer;
+         position:absolute;
+		 top:26%;
+		 left:5.5%;
+        }   
+#a1{
+     cursor:pointer;
+     font-size:35px;
+	 font-weight:bold;
+	 position:absolute;
+	 left:10%;
+	 top:15%;
+   }
+#a2{
+     cursor:pointer;
+     font-size:15px;
+	 font-weight:bold;
+	 position:absolute;
+	 left:10%;
+	 top:56%;
+   }
+#a3{
+    
+    position:absolute;
+	right:30%;
+	top:23%;
+   }   
+#ul{
+    
+	list-style:none;
+  }
+.li{
+   display:inline;
+   padding:10px;
+  } 
+.a4{
+     text-decoration:none;
+	 font-size:20px;
+	 font-weight:bold;
+	 color:white;
+   }
+.z{
+   color:green;
+  }
+#B{
+    width:100%;
+	height:250px;
+	z-index:-1;
+	color:white;
+	background-image:url(stock1.jpg);
+	background-repeat:no-repeat;
+    background-size:100%,250px;
+	position:absolute;
+	top:12.8%;
+	left:0;
+	right:0;
+  } 
+#b1{
+   font-size:50px;
+   font-weight:bold;
+   position:absolute;
+   top:30%;
+   left:40%;
+   }
+#b2{
+   font-weight:bold;
+   color:gray;
+   font-size:20px;
+   position:absolute;
+   top:56%;
+   left:38.5%;
+   }   
+#C{
+    width:100%;
+	height:1000px;
+	z-index:-1;
+	color:white;
+	background:#e3e6e4;
+	position:absolute;
+	top:52%;
+	left:0;
+	right:0;
+  } 
+#c1{
+   font-size:40px;
+   width:60%;
+   color:#080430;
+   font-weight:bold;
+   position:absolute;
+   top:6%;
+   left:22%;
+   }
+#c2{
+   color:gray;
+   font-size:20px;
+   position:absolute;
+   top:15%;
+   left:38.5%;
+   }    
+#c3{
+     width:27%;
+	 height:15%;
+	 border-radius:5px;
+	 background-color:white;
+     position:absolute;
+	 top:22%;
+	 left:7.5%;
+   }
+#image2{
+        position:absolute;
+		top:10%;
+		left:2%;
+       }
+#image3{
+        position:absolute;
+		top:22%;
+		left:12%;
+       }   	   
+#x1{ 
+    color:#080430;
+	font-weight:bold;
+	font-size:25px;
+    position:absolute;
+	top:20%;
+	left:24%;
+   }
+#x2{ 
+    color:gray;
+	font-size:17px;
+	line-height:25px;
+    position:absolute;
+	top:44%;
+	left:24%;
+   }      
+#c4{
+     width:27%;
+	 height:15%;
+	 border-radius:5px;
+	 background-color:white;
+     position:absolute;
+	 top:22%;
+	 left:36.5%;
+   }
+#x3{ 
+    color:gray;
+	font-size:18px;
+	line-height:25px;
+    position:absolute;
+	top:44%;
+	left:24%;
+   }
+#x4{ 
+    color:gray;
+	font-size:18px;
+	line-height:25px;
+    position:absolute;
+	top:60%;
+	left:24%;
+   }   
+#c5{
+     width:27%;
+	 height:15%;
+	 border-radius:5px;
+	 background-color:white;
+     position:absolute;
+	 top:22%;
+	 left:65.5%;
+   }      
+#c6{
+     width:85%;
+	 height:48%;
+	 border:1px solid white;
+     position:absolute;
+	 top:42%;
+	 left:7.5%;
+   }
+#D{
+    width:100%;
+	height:900px;
+	z-index:-1;
+	color:white;
+	background:#e3e6e4;
+	position:absolute;
+	top:100%;
+	left:0;
+	right:0;
+  }
+#d1{
+   position:absolute;
+   top:20%;
+   left:18%;
+   }  
+.d2{
+     width:838px;
+	 height:50px;
+	 margin:22px;
+	 font-size:17px;
+	 background-color:white;
+	 padding-left:25px;
+	 border-radius:8px;
+	 border:none;
+	 outline:none;
+   }
+.d2:hover{
+        outline:1px solid #434445;
+         }   
+.d3{
+     width:840px;
+	 font-size:18px;
+	 background-color:white;
+	 border-radius:8px;
+	 padding-left:25px;
+	 padding-top:10px;
+	 height:140px;
+	 margin-top:35px;
+	 margin-left:20px;
+	 border:none;
+	 outline:none;
+   } 
+.d3:hover{
+	 outline:1px solid black;
+         }
+#d4{
+   width:200px;
+   background-color:#0aa119;
+   font-size:18px;
+   color:white;
+   height:50px;
+   border-radius:5px;
+   border:none;
+   position:absolute;
+   top:110%;
+   left:2.5%;
+   }
+#e1{
+     color:#080430;
+	 font-size:38px;
+	 font-weight:bold;
+	 position:absolute;
+	 top:5%;
+	 left:35%;
+   }
+#e2{
+     color:gray;
+	 font-size:18px;
+	 position:absolute;
+	 top:12%;
+	 left:27.7%;
+   } 
+#End{
+   width:100%;
+   height:500px;
+   background:linear-gradient(to bottom,#08021a,#0a021c);
+   z-index:-1;
+   position:absolute;
+   top:190%;
+   left:0;
+   right:0;
+  }	
+ #j4{
+     font-size:35px;
+	 font-weight:bold;
+	 text-decoration:none;
+	 color:white;
+	 position:absolute;
+	 left:7%;
+	 top:10%;
+   }
+#j5{
+     font-size:15px;
+	 font-weight:bold;
+	 color:white;
+	 text-decoration:none;
+	 position:absolute;
+	 left:7%;
+	 top:17%;
+   }
+#image21{
+          cursor:pointer;
+          position:absolute;
+		  top:12%;
+		  left:3%;
+        }   
+#j6{
+     font-size:18px;
+	 width:28%;
+	 color:gray;
+	 line-height:30px;
+	 position:absolute;
+	 left:7%;
+	 top:28%;
+   }
+#j7{
+     font-size:30px;
+	 color:white;
+	 position:absolute;
+	 left:40%;
+	 top:11%;
+   } 
+#j8{
+     font-size:18px;
+	 width:24%;
+	 color:gray;
+	 line-height:30px;
+	 position:absolute;
+	 left:40%;
+	 top:28%;
+   } 
+#j9{
+     font-size:18px;
+	 width:24%;
+	 color:gray;
+	 line-height:30px;
+	 position:absolute;
+	 left:40%;
+	 top:52%;
+   }
+#j10{
+     font-size:18px;
+	 color:gray;
+	 position:absolute;
+	 left:40%;
+	 top:65%;
+   } 
+#email{
+       text-decoration:none;
+	   color:gray;
+      }
+#email:hover{
+            color:white;
+			}
+#k1{
+     font-size:30px;
+	 color:white;
+	 position:absolute;
+	 left:68%;
+	 top:11%;
+   }
+#ul1{
+     list-style:none;
+	 font-size:20px;
+	 color:gray;
+	 line-height:54px;
+	 position:absolute;
+	 top:20%;
+	 left:65%;
+    } 
+#ul2{
+     list-style:none;
+	 font-size:20px;
+	 color:gray;
+	 line-height:54px;
+	 position:absolute;
+	 top:20%;
+	 left:82%;
+    }
+.r1{
+    text-decoration:none;
+	color:gray;
+   }
+.r1:hover{
+          color:white;
+         } 
+#k2{
+     font-size:30px;
+	 color:white;
+	 position:absolute;
+	 left:84%;
+	 top:11%;
+   }
+#hr2{
+     width:100%;
+	 opacity:0.1;
+     position:absolute;
+     top:84%;
+    }
+#k3{
+     font-size:18px;
+	 color:gray;
+	 position:absolute;
+	 left:34%;
+	 bottom:8%;
+   }   
+  
+</style>
+</head>
+<body>
+     <div id="A">
+      <div id="a1">Pro-Traderz</div>
+	  <div id="a2">compounding Growth</div>
+	  <div><img id="image20" src="head.jpeg" width="40px" height="40px"></div>
+	  
+	  <div id="a3">
+		<ul id="ul">
+		    <li class="li"><a class="a4" href="ProWeb.html">HOME</a></li>
+			<li class="li"><a class="a4" href="About.html">ABOUT</a></li>
+			<li class="li"><a class="a4" href="Courses.html">COURSES</a></li>
+			<li class="li"><a class="a4 z" href="#">CONTACT</a></li>
+		</ul>
+	  </div>
+   </div>
+   
+   <div id="B">
+         <div id="b1">Contact Us</div>
+         <div id="b2">Get in touch with the team Now</div>
+   </div>
+   
+   <div id="C">
+          <div id="c1">We are waiting for you and get started with &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; us.</div>
+          <div id="c2">Contact us to get the whole course content.</div>
+		  
+		  <div id="c3">
+		      <div><img id="image2" src="zig.jpeg" width="80px" height="75px"></div>
+		      <div id="x1">Our Location</div>
+              <div id="x2">Plot No, A-17, Near KDK College, Nandanvan , Nagpur - 440009.</div>
+		  
+		  </div>
+          
+		  <div id="c4">
+		      <div><img id="image3" src="mobile.png" width="32px" height="30px"></div>
+		      <div id="x1">Give us a call</div>
+              <div id="x3">8983112403</div>
+			  <div id="x4">8669957301</div>
+		  </div>
+		  
+		  <div id="c5">
+		    <div><img id="image3" src="mail.png" width="40px" height="30px"></div>
+		           <div id="x1">Help Desk</div>
+				   <div id="x3">protraderzofficial@gmail.com</div>
+			       <div id="x4">vicky.gawande25@gmail.com</div>
+		  </div>
+		  
+		  <div><iframe id="c6" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1860.6694526190645!2d79.131986!3d21.138907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc062534cb2d4b68!2sAcademy%20of%20Pro-Traderz!5e0!3m2!1sen!2sin!4v1637841426399!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><div>
+
+   </div>
+   
+   <div id="D">
+          <div id="e1">Drop your details to us</div>
+		  <div id="e2">We have made it easy for clients to reach us and get their solutions weaved</div>
+
+
+		  
+   <div id="d1">
+   
+        <form>
+		    <input class="d2" type="text" name="var1" placeholder="Name">
+			<br><br>
+			
+			<input class="d2" type="number" name="var1" placeholder="Your Phone Number">
+			<br><br>
+			
+			<input class="d2" type="email" name="mail" placeholder="Email*">
+			<br><br>
+			
+			<textarea class="d3" name="txt" placeholder="Message(optional)"></textarea>
+	
+		    <input id="d4" type="submit" value="submit">
+		</form>
+   
+   
+   </div>
+   
+   
+   </div>
+   
+   <div id="End">
+	           
+			   
+			   <div><a id="j4"  href="#">Academy Of Pro-Traderz</a></div>
+			   <div><a id="j5"  href="#">Compounding Growth</a></div>
+			   <div><img id="image21" src="head.jpeg" width="40px" height="40px"></div>
+	           <div id="j6">Academy of Pro-Traderz has a mission to empower society to have the information and abilities necessary to take advantage of the vast array of possibilities available in the market to achieve financial independence and develop a smart trader community.</div>
+               
+			   <div id="j7">CONTACT INFO</div>
+			   <div id="j8">Address : Academy of Pro-Traderz, Plot No, A-17, Near KDK College, Nandanvan Nagpur - 440009.</div>
+			   <div id="j9">Contact us @ 8983112403</div>
+			   <div id="j10">Email: <a id="email" href="#"> protraderzofficial@gmail.com</a></div>
+			   
+			   <div id="k1">SERVICES</div>
+			   
+			   <ul id="ul1">
+			     <li class="li1">Portfolio Management</li>
+				 <li class="li1">Professional Trading</li>
+				 <li class="li1">Capital Management</li>
+				 <li class="li1">Risk Management</li>
+				 <li class="li1"> Mutual Funds & ETF</li>
+			   </ul>
+			   
+			   
+			   <div id="k2">COMPANY</div>
+			   <ul id="ul2">
+			     <li class="li2"><a class="r1" href="#">About company</a></li>
+			     <li class="li2"><a class="r1" href="#C">Latest Blog posts</a></li>
+			     <li class="li2"><a class="r1" href="#">Our Gallery</a></li>
+			     <li class="li2"><a class="r1" href="#">Courses</a></li>
+				 <li class="li2"><a class="r1" href="#">Get in touch</a></li>
+			   </ul>
+			   <hr id="hr2">
+			   
+			   
+			   <div id="k3">© 2021 Academy of Pro-Traderz. All rights reserved</div>
+
+	   </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
